@@ -15,7 +15,18 @@
 # 0 < len (so'zlar) < 100
 
 # Yechilishi
+def uchta(text):
+    suzlar = 0
 
+    if len(text) <= 100:
+        for i in text.split():
+            if i.isalpha():
+                suzlar += 1
+            else:
+                suzlar = 0
+        return True if suzlar >= 3 else False
+    else:
+        return False
 
 
 
