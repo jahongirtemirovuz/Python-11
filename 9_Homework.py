@@ -26,6 +26,9 @@ print(is_majority([True, True, False, True, False]))  # Output: True
 print(is_majority([True, True, False, True, False]))  # Output: False
 print(is_majority([]))  # Output: False
 
+######################### Task 2 additional solve
+def is_majority(items: list) -> bool:
+    return sum(items) > len(items) / 2
 
 # Task 3
 def rotate_list(lst):
@@ -50,11 +53,3 @@ def compress_list(lst):
 a = [5, 5, 5, 4, 5, 6, 6, 5, 5, 7, 8, 0, 0]
 print(compress_list(a))  # Output: [5, 4, 5, 6, 5, 7, 8, 0]
 
-
-# Task 5
-def sort_files(files):
-    return sorted(files, key=lambda x: (x.split(".")[1:] or ["", x.split(".")[0]]) + [x.split(".")[0]])
-
-# Test the function
-files = ["yandex.ru.exe", "google.com", "config.", "config", "print.png", "example.google.com.exe", "example1.google.com.exe", "config.cpp"]
-print(sort_files(files))   # Output: ['config', 'config.', 'config.cpp', 'google.com', 'example.google.com.exe', 'example1.google.com.exe', 'print.png', 'yandex.ru.exe']
