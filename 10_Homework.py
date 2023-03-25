@@ -34,7 +34,7 @@ print(jazz(["G", "F", "FTV"]))
 # def find_odd(list):
 #     out = 0
 #     for num in list:
-#         out ^= num
+#         out **= num
 #     return out
 # print(find_odd([1,2,3,4,6,7,8,8,7,4,5,3,5,5,5]))
 ############################################ /Task 4
